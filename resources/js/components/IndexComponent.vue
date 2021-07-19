@@ -25,11 +25,11 @@
                        <td>{{post.body}}</td>
                        <td>
                            <router-link
-                               :to="{name: 'edit', params: {id: post.id}}" class="btn btn-primary">
+                               :to="{name: 'edit', params: {id: post.id}}" class="btn btn-primary">Editar
                            </router-link>
                        </td>
                        <td>
-                           <button class="btn btn-danger">
+                           <button class="btn btn-danger" @click="deletePost(post.id)">
                                Excluir
                            </button>
                        </td>
